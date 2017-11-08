@@ -1,2 +1,2 @@
 # itcss-boilerplate
-ITCSS core structure &amp; utility classes for new projects
+ITCSS core structure &amp; common abstractions for new projects
