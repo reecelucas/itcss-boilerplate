@@ -1,0 +1,22 @@
+{
+  "name": "itcss-boilerplate",
+  "description": "ITCSS boilerplate",
+  "version": "1.0.0",
+  "author": "Reece Lucas <reecelucas@sky.com>",
+  "dependencies": {
+    "stylelint": "^8.2.0",
+    "stylelint-scss": "^2.1.0"
+  },
+  "keywords": [
+    "ITCSS"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "lint": "stylelint 'styles/**/*.scss'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+
+  }
+}

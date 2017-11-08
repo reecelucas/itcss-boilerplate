@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #BREAKPOINTS
+   ========================================================================== */
+
+@mixin phablet {
+
+  @media screen and (min-width: $phablet-width) {
+    @content;
+  }
+
+}
+
+@mixin tablet {
+
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+
+}
+
+@mixin desktop {
+
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+
+}
