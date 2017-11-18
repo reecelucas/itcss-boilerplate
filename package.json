@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Reece Lucas <reecelucas@sky.com>",
   "dependencies": {
+    "sass-mq": "^3.3.2",
     "stylelint": "^8.2.0",
     "stylelint-scss": "^2.1.0"
   },
@@ -16,7 +17,5 @@
     "lint": "stylelint 'styles/**/*.scss'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }

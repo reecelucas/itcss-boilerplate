@@ -10,11 +10,11 @@
  * }
  */
 @function rem-calc($size) {
-  $remSize: $size / $global-font-size;
-  @return #{$remSize}rem;
+    $remSize: $size / $global-font-size;
+    @return #{$remSize}rem;
 }
 
 @function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
+    @return $value / ($value * 0 + 1);
 }
 

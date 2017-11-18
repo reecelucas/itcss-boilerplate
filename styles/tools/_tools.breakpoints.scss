@@ -2,26 +2,28 @@
    #BREAKPOINTS
    ========================================================================== */
 
+@import 'node_modules/sass-mq/mq';
+
 @mixin phablet {
 
-  @media screen and (min-width: $phablet-width) {
-    @content;
-  }
+    @include mq($from: phablet) {
+        @content;
+    }
 
 }
 
 @mixin tablet {
 
-  @media screen and (min-width: $tablet-width) {
-    @content;
-  }
+    @include mq($from: tablet) {
+        @content;
+    }
 
 }
 
 @mixin desktop {
 
-  @media screen and (min-width: $desktop-width) {
-    @content;
-  }
+    @include mq($from: desktop) {
+        @content;
+    }
 
 }

@@ -3,14 +3,13 @@
    ========================================================================== */
 
 .o-list-inline {
-  list-style: none;
-  margin-left: 0;
+    list-style: none;
+    margin-left: 0;
 
-  li {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
+    li {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 
@@ -18,5 +17,5 @@
    ========================================================================== */
 
 .o-list-inline--centered {
-  text-align: center;
+    text-align: center;
 }

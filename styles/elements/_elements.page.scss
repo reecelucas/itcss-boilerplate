@@ -14,11 +14,11 @@
  *    scrollbars naturally.
  */
 
- html {
-  font-size: $global-font-size; /* [1] */
-	line-height: $global-line-height; /* [1] */
-	min-height: 100%; /* [2] */
-  overflow-y: scroll; /* [3] */
+html {
+    font-size: $global-font-size; /* [1] */
+    line-height: $global-line-height; /* [1] */
+    min-height: 100%; /* [2] */
+    overflow-y: scroll; /* [3] */
 }
 
 body {

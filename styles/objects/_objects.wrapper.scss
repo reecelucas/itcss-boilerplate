@@ -3,17 +3,17 @@
    ========================================================================== */
 
 .o-wrapper {
-  display: block;
-  margin: {
-    right: auto;
-    left: auto;
-  }
-  max-width: $global-site-max-width;
-  padding: {
-    right: rem-calc($global-spacing-unit);
-    left: rem-calc($global-spacing-unit);
-  }
-  position: relative;
+    display: block;
+    margin: {
+        right: auto;
+        left: auto;
+    }
+    max-width: $global-site-max-width;
+    padding: {
+        right: rem-calc($global-spacing-unit);
+        left: rem-calc($global-spacing-unit);
+    }
+    position: relative;
 }
 
 

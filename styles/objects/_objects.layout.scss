@@ -62,84 +62,79 @@
  */
 
 .o-layout {
-  display: block; /* [1] */
-  font-size: 0;
-  list-style: none; /* [1] */
-  margin:  0; /* [2] */
-  margin-left: -($global-spacing-unit); /* [3] */
-  padding: 0; /* [2] */
+    display: block; /* [1] */
+    font-size: 0;
+    list-style: none; /* [1] */
+    margin:  0; /* [2] */
+    margin-left: -($global-spacing-unit); /* [3] */
+    padding: 0; /* [2] */
 }
 
-  /**
-   * 1. Required in order to combine fluid widths with fixed gutters.
-   * 2. Allows us to manipulate grids vertically, with text-level properties,
-   *    etc.
-   * 5. Gutters provided by left padding:
-   *    http://csswizardry.com/2011/08/building-better-grid-systems/
-   * 4. Default item alignment is with the tops of each other, like most
-   *    traditional grid/layout systems.
-   * 5. By default, all layout items are full-width (mobile first).
-   */
+    /**
+     * 1. Required in order to combine fluid widths with fixed gutters.
+     * 2. Allows us to manipulate grids vertically, with text-level properties,
+     *    etc.
+     * 5. Gutters provided by left padding:
+     *    http://csswizardry.com/2011/08/building-better-grid-systems/
+     * 4. Default item alignment is with the tops of each other, like most
+     *    traditional grid/layout systems.
+     * 5. By default, all layout items are full-width (mobile first).
+     */
 
-  .o-layout__item {
-    box-sizing: border-box; /* [1] */
-    display: inline-block; /* [2] */
-    padding-left: $global-spacing-unit; /* [3] */
-    vertical-align: top; /* [4] */
-    width: 100%; /* [5] */
-  }
+    .o-layout__item {
+        box-sizing: border-box; /* [1] */
+        display: inline-block; /* [2] */
+        padding-left: $global-spacing-unit; /* [3] */
+        vertical-align: top; /* [4] */
+        width: 100%; /* [5] */
+    }
 
 
 /* Gutter size modifiers.
    ========================================================================== */
 
 .o-layout--flush {
-  margin-left: 0;
+    margin-left: 0;
 
-  > .o-layout__item {
-    padding-left: 0;
-  }
-
+    > .o-layout__item {
+        padding-left: 0;
+    }
 }
 
 
 .o-layout--tiny {
-  margin-left: -($global-spacing-unit-tiny);
+    margin-left: -($global-spacing-unit-tiny);
 
-  > .o-layout__item {
-    padding-left: $global-spacing-unit-tiny;
-  }
-
+    > .o-layout__item {
+        padding-left: $global-spacing-unit-tiny;
+    }
 }
 
 
 .o-layout--small {
-  margin-left: -($global-spacing-unit-small);
+    margin-left: -($global-spacing-unit-small);
 
-  > .o-layout__item {
-    padding-left: $global-spacing-unit-small;
-  }
-
+    > .o-layout__item {
+        padding-left: $global-spacing-unit-small;
+    }
 }
 
 
 .o-layout--large {
-  margin-left: -($global-spacing-unit-large);
+    margin-left: -($global-spacing-unit-large);
 
-  > .o-layout__item {
-    padding-left: $global-spacing-unit-large;
-  }
-
+    > .o-layout__item {
+        padding-left: $global-spacing-unit-large;
+    }
 }
 
 
 .o-layout--huge {
-  margin-left: -($global-spacing-unit-huge);
+    margin-left: -($global-spacing-unit-huge);
 
-  > .o-layout__item {
-    padding-left: $global-spacing-unit-huge;
-  }
-
+    > .o-layout__item {
+        padding-left: $global-spacing-unit-huge;
+    }
 }
 
 
@@ -150,9 +145,9 @@
 
 .o-layout--middle {
 
-  > .o-layout__item {
-    vertical-align: middle;
-  }
+    > .o-layout__item {
+        vertical-align: middle;
+    }
 
 }
 
@@ -160,9 +155,9 @@
 
 .o-layout--bottom {
 
-  > .o-layout__item {
-    vertical-align: bottom;
-  }
+    > .o-layout__item {
+        vertical-align: bottom;
+    }
 
 }
 
@@ -173,25 +168,24 @@
  */
 
 .o-layout--stretch {
-  display: flex;
-  flex-wrap: wrap;
-
-  > .o-layout__item {
     display: flex;
-  }
+    flex-wrap: wrap;
 
-  &.o-layout--center {
-    justify-content: center;
-  }
+    > .o-layout__item {
+        display: flex;
+    }
 
-  &.o-layout--right {
-    justify-content: flex-end;
-  }
+    &.o-layout--center {
+        justify-content: center;
+    }
 
-  &.o-layout--left {
-    justify-content: flex-start;
-  }
+    &.o-layout--right {
+        justify-content: flex-end;
+    }
 
+    &.o-layout--left {
+        justify-content: flex-start;
+    }
 }
 
 
@@ -201,24 +195,22 @@
 // Fill up the layout system from the centre.
 
 .o-layout--center {
-  text-align: center;
+    text-align: center;
 
-  > .o-layout__item {
-    text-align: left;
-  }
-
+    > .o-layout__item {
+        text-align: left;
+    }
 }
 
 
 // Fill up the layout system from the right-hand side.
 
 .o-layout--right {
-  text-align: right;
+    text-align: right;
 
-  > .o-layout__item {
-    text-align: left;
-  }
-
+    > .o-layout__item {
+        text-align: left;
+    }
 }
 
 
@@ -228,24 +220,22 @@
  */
 
 .o-layout--left {
-  text-align: left;
-
-  > .o-layout__item {
     text-align: left;
-  }
 
+    > .o-layout__item {
+        text-align: left;
+    }
 }
 
 
 // Reverse the rendered order of the grid system.
 
 .o-layout--reverse {
-  direction: rtl;
+    direction: rtl;
 
-  > .o-layout__item {
-    direction: ltr;
-  }
-
+    > .o-layout__item {
+        direction: ltr;
+    }
 }
 
 
@@ -256,8 +246,8 @@
 
 .o-layout--auto {
 
-  > .o-layout__item {
-    width: auto;
-  }
+    > .o-layout__item {
+        width: auto;
+    }
 
 }

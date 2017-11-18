@@ -10,11 +10,11 @@
  *    using `display: block;`.
  */
 
- img {
-  height: auto; /* [1] */
-  font-style: italic; /* [2] */
-  max-width: 100%; /* [1] */
-  vertical-align: middle; /* [3] */
+img {
+    height: auto; /* [1] */
+    font-style: italic; /* [2] */
+    max-width: 100%; /* [1] */
+    vertical-align: middle; /* [3] */
 }
 
 
@@ -25,5 +25,5 @@
 
 img[width],
 img[height] {
-  max-width: none;
+    max-width: none;
 }

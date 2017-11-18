@@ -19,25 +19,25 @@ $ratios: (
  */
 
 .o-ratio {
-  position: relative;
-  display: block;
-
-  &:before {
-    content: "";
+    position: relative;
     display: block;
-    width: 100%;
-    padding-bottom: 100%; /* [1] */
-  }
+
+    &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-bottom: 100%; /* [1] */
+    }
 
 }
 
 
-  .o-ratio__content,
-  .o-ratio > iframe,
-  .o-ratio > embed,
-  .o-ratio > object {
-    @include cover;
-  }
+    .o-ratio__content,
+    .o-ratio > iframe,
+    .o-ratio > embed,
+    .o-ratio > object {
+        @include cover;
+    }
 
 
 /* stylelint-disable */
@@ -53,21 +53,21 @@ $ratios: (
 
 @each $ratio in $ratios {
 
-  @each $antecedent, $consequent in $ratio {
+    @each $antecedent, $consequent in $ratio {
 
-    @if (type-of($antecedent) != number) {
-      @error "`#{$antecedent}` needs to be a number."
+        @if (type-of($antecedent) != number) {
+            @error "`#{$antecedent}` needs to be a number."
+        }
+
+        @if (type-of($consequent) != number) {
+            @error "`#{$consequent}` needs to be a number."
+        }
+
+        .o-ratio--#{$antecedent}\:#{$consequent}:before {
+            padding-bottom: ($consequent/$antecedent) * 100%;
+        }
+
     }
-
-    @if (type-of($consequent) != number) {
-      @error "`#{$consequent}` needs to be a number."
-    }
-
-    .o-ratio--#{$antecedent}\:#{$consequent}:before {
-      padding-bottom: ($consequent/$antecedent) * 100%;
-    }
-
-  }
 
 }
 

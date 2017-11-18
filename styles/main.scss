@@ -51,6 +51,8 @@
  *  Events...............Utilities for controlling common user actions.
  *	Show-hide............Utilities for hiding content across resolutions.
  *	Typography...........Utilities for controlling font size and style.
+ *  Widths...............Utilities for controlling element width. Can be used in
+ *                       conjunction with o-layout to create a simple responsive grid.
  *
  */
 
@@ -94,3 +96,4 @@
 @import "utilities/utilities.events";
 @import "utilities/utilities.show-hide";
 @import "utilities/utilities.typography";
+@import "utilities/utilities.widths";
